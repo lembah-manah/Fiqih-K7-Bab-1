@@ -5,6 +5,41 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Asesmen Formatif I — Modul Fiqih Kelas 7</title>
 <link rel="stylesheet" href="style.css">
+<style>
+  details.kunci {
+    margin: 0.6rem 0 1.2rem;
+    border: 1px solid #cfd8dc;
+    border-left: 4px solid #2e7d32;
+    border-radius: 6px;
+    background: #f4f9f4;
+    overflow: hidden;
+  }
+  details.kunci summary {
+    cursor: pointer;
+    list-style: none;
+    padding: 0.55rem 0.9rem;
+    font-weight: 600;
+    color: #1b5e20;
+    background: #e6f2e7;
+    user-select: none;
+  }
+  details.kunci summary::-webkit-details-marker { display: none; }
+  details.kunci summary::before {
+    content: "▶ ";
+    display: inline-block;
+    transition: transform 0.15s ease;
+  }
+  details.kunci[open] summary::before { transform: rotate(90deg); }
+  details.kunci summary:hover { background: #dcecdd; }
+  details.kunci .kunci-isi {
+    padding: 0.7rem 1rem 0.9rem;
+  }
+  details.kunci .kunci-isi p { margin: 0.35rem 0; }
+  details.kunci .jawaban { color: #1b5e20; font-weight: 600; }
+  .jodoh-kunci table {
+    margin-top: 0.4rem;
+  }
+</style>
 </head>
 <body>
 
@@ -47,32 +82,74 @@
   <div class="soal">
     <p><strong>1.</strong> Para ulama fiqih menggunakan istilah thaharah dalam hal bersuci. Istilah thaharah ditinjau dari arti secara etimologi adalah ...</p>
     <p class="opsi">a. mandi &nbsp;&nbsp; b. wudlu &nbsp;&nbsp; c. suci &nbsp;&nbsp; d. tayamum</p>
+    <details class="kunci">
+      <summary>Kunci Jawaban & Pembahasan</summary>
+      <div class="kunci-isi">
+        <p class="jawaban">Jawaban: c. suci</p>
+        <p><strong>Pembahasan:</strong> Secara etimologi (bahasa), thaharah berarti "suci" atau "bersih". Sedangkan secara terminologi (istilah fiqih), thaharah berarti menghilangkan hadats dan/atau najis dengan air atau alat bersuci lain yang memenuhi syarat.</p>
+      </div>
+    </details>
   </div>
 
   <div class="soal">
     <p><strong>2.</strong> Air yang suci dan mensucikan (dapat digunakan untuk berwudhu atau mandi wajib) disebut dengan air...</p>
     <p class="opsi">a. air Musta'mal &nbsp;&nbsp; b. air Mutanajis &nbsp;&nbsp; c. air Mutlak &nbsp;&nbsp; d. air Musyammas</p>
+    <details class="kunci">
+      <summary>Kunci Jawaban & Pembahasan</summary>
+      <div class="kunci-isi">
+        <p class="jawaban">Jawaban: c. air Mutlak</p>
+        <p><strong>Pembahasan:</strong> Air mutlak adalah air yang masih murni sesuai asalnya (belum tercampur/berubah) sehingga sah digunakan untuk bersuci, seperti air hujan, air sumur, air laut, air sungai, air mata air, air embun, dan air salju.</p>
+      </div>
+    </details>
   </div>
 
   <div class="soal">
     <p><strong>3.</strong> Yang termasuk air yang suci dan mensucikan adalah air…</p>
     <p class="opsi">a. laut, hujan, sungai &nbsp;&nbsp; b. laut, hujan, teh &nbsp;&nbsp; c. salju, embun, kopi &nbsp;&nbsp; d. laut, hujan, kelapa</p>
+    <details class="kunci">
+      <summary>Kunci Jawaban & Pembahasan</summary>
+      <div class="kunci-isi">
+        <p class="jawaban">Jawaban: a. laut, hujan, sungai</p>
+        <p><strong>Pembahasan:</strong> Air laut, air hujan, dan air sungai termasuk air mutlak (suci mensucikan) karena masih murni. Adapun teh, kopi, dan air kelapa sudah bercampur/berubah sehingga tidak lagi mensucikan.</p>
+      </div>
+    </details>
   </div>
 
   <div class="soal">
     <p><strong>4.</strong> Air yang suci namun tidak mensucikan, salah satunya adalah air sedikit (kurang dari dua kullah) yang sudah digunakan untuk membersihkan hadas kecil dan besar disebut….</p>
     <p class="opsi">a. air Musta'mal &nbsp;&nbsp; b. air Mutlak &nbsp;&nbsp; c. air Musyammas &nbsp;&nbsp; d. air Mutanajis</p>
+    <details class="kunci">
+      <summary>Kunci Jawaban & Pembahasan</summary>
+      <div class="kunci-isi">
+        <p class="jawaban">Jawaban: a. air Musta'mal</p>
+        <p><strong>Pembahasan:</strong> Air musta'mal adalah air sedikit (kurang dari dua kullah) yang telah dipakai untuk bersuci (menghilangkan hadats). Air ini tetap suci, namun tidak dapat digunakan lagi untuk bersuci.</p>
+      </div>
+    </details>
   </div>
 
   <div class="soal">
     <p><strong>5.</strong> <span class="ar" style="font-size:1.2rem; margin:.3rem 0;">وَيُنَزِّلُ عَلَيْكُمْ مِنَ السَّمَاءِ مَاءً لِيُطَهِّرَكُمْ بِهِ (الأنفال: ١١)</span></p>
     <p>Yang dimaksud air pada ayat tersebut adalah ….</p>
     <p class="opsi">a. mata air &nbsp;&nbsp; b. air laut &nbsp;&nbsp; c. air sungai &nbsp;&nbsp; d. air hujan</p>
+    <details class="kunci">
+      <summary>Kunci Jawaban & Pembahasan</summary>
+      <div class="kunci-isi">
+        <p class="jawaban">Jawaban: d. air hujan</p>
+        <p><strong>Pembahasan:</strong> Ayat tersebut (QS. Al-Anfal: 11) menjelaskan Allah menurunkan air (hujan) dari langit untuk mensucikan. Kata "مِنَ السَّمَاءِ" (dari langit) menunjukkan air yang dimaksud adalah air hujan.</p>
+      </div>
+    </details>
   </div>
 
   <div class="soal">
     <p><strong>6.</strong> Perhatikan data berikut! (1) Air hujan (2) Air laut (3) Air kopi (4) Air kelapa (5) Air sungai (6) Air teh.<br>Dari data di atas yang termasuk air suci mensucikan adalah ….</p>
     <p class="opsi">a. 1-2-5 &nbsp;&nbsp; b. 1-3-5 &nbsp;&nbsp; c. 1-4-5 &nbsp;&nbsp; d. 1-2-3</p>
+    <details class="kunci">
+      <summary>Kunci Jawaban & Pembahasan</summary>
+      <div class="kunci-isi">
+        <p class="jawaban">Jawaban: a. 1-2-5 (air hujan, air laut, air sungai)</p>
+        <p><strong>Pembahasan:</strong> Air hujan, air laut, dan air sungai adalah air mutlak yang suci dan mensucikan. Air kopi, air kelapa, dan air teh sudah bercampur benda lain sehingga tidak lagi tergolong air mutlak.</p>
+      </div>
+    </details>
   </div>
 
   <div class="soal">
@@ -82,36 +159,85 @@
     b. Allah mencintai orang-orang yang taubat dan berserah diri<br>
     c. Allah memulyakan orang-orang yang bersuci dan bersyukur<br>
     d. Allah mencintai orang-orang yang taubat dan bersuci</p>
+    <details class="kunci">
+      <summary>Kunci Jawaban & Pembahasan</summary>
+      <div class="kunci-isi">
+        <p class="jawaban">Jawaban: d. Allah mencintai orang-orang yang taubat dan bersuci</p>
+        <p><strong>Pembahasan:</strong> QS. Al-Baqarah: 222 menegaskan bahwa Allah mencintai (يُحِبُّ) dua golongan, yaitu at-tawwabin (orang-orang yang bertaubat) dan al-mutathahhirin (orang-orang yang bersuci/menyucikan diri).</p>
+      </div>
+    </details>
   </div>
 
   <div class="soal">
     <p><strong>8.</strong> Di bawah ini hal-hal yang membedakan antara membersihkan diri dan bersuci adalah….</p>
     <p class="opsi">a. harus disertai niat &nbsp;&nbsp; b. bertujuan untuk membersihkan &nbsp;&nbsp; c. mengikuti pola hidup sehat &nbsp;&nbsp; d. termasuk syarat sahnya shalat</p>
+    <details class="kunci">
+      <summary>Kunci Jawaban & Pembahasan</summary>
+      <div class="kunci-isi">
+        <p class="jawaban">Jawaban: a. harus disertai niat</p>
+        <p><strong>Pembahasan:</strong> Bersuci (thaharah) dalam syariat harus disertai niat karena berkaitan dengan menghilangkan hadats/najis sebagai syarat ibadah. Sedangkan membersihkan diri secara umum (mandi biasa, cuci tangan, dsb.) tidak memerlukan niat khusus.</p>
+      </div>
+    </details>
   </div>
 
   <div class="soal">
     <p><strong>9.</strong> Selain air, batu juga boleh digunakan untuk bersuci dengan syarat, kecuali ….</p>
     <p class="opsi">a. najisnya belum kering &nbsp;&nbsp; b. 3 batunya basah &nbsp;&nbsp; c. batunya tidak terkena najis &nbsp;&nbsp; d. najis tidak berpindah tempat</p>
+    <details class="kunci">
+      <summary>Kunci Jawaban & Pembahasan</summary>
+      <div class="kunci-isi">
+        <p class="jawaban">Jawaban: b. 3 batunya basah</p>
+        <p><strong>Pembahasan:</strong> Syarat batu (istijmar) untuk bersuci antara lain: najis belum kering, najis belum berpindah tempat, dan batu tidak terkena najis lain sebelumnya, serta digunakan minimal 3 batu/usapan. "Batunya basah" bukan termasuk syarat, sehingga menjadi jawaban yang dikecualikan.</p>
+      </div>
+    </details>
   </div>
 
   <div class="soal">
     <p><strong>10.</strong> Air yang hukumnya makruh digunakan untuk bersuci adalah ….</p>
     <p class="opsi">a. air mutanajjis &nbsp;&nbsp; b. air makruh &nbsp;&nbsp; c. air musta'mal &nbsp;&nbsp; d. air musyammas</p>
+    <details class="kunci">
+      <summary>Kunci Jawaban & Pembahasan</summary>
+      <div class="kunci-isi">
+        <p class="jawaban">Jawaban: d. air musyammas</p>
+        <p><strong>Pembahasan:</strong> Air musyammas adalah air yang dipanaskan langsung di bawah terik matahari, biasanya dalam bejana logam yang mudah berkarat. Hukumnya makruh digunakan untuk bersuci karena dikhawatirkan dapat menimbulkan penyakit kulit.</p>
+      </div>
+    </details>
   </div>
 
   <div class="soal">
     <p><strong>11.</strong> Pada suatu bejana terdapat air sedikit (kurang dari dua kullah), air tersebut kejatuhan najis, akan tetapi tidak merubah air tersebut baik warna, bau maupun rasanya. Hukum menggunakan air tersebut adalah….</p>
     <p class="opsi">a. suci mensucikan &nbsp;&nbsp; b. najis dan tidak boleh digunakan &nbsp;&nbsp; c. suci tidak mensucikan &nbsp;&nbsp; d. air musta'mal</p>
+    <details class="kunci">
+      <summary>Kunci Jawaban & Pembahasan</summary>
+      <div class="kunci-isi">
+        <p class="jawaban">Jawaban: b. najis dan tidak boleh digunakan</p>
+        <p><strong>Pembahasan:</strong> Air yang jumlahnya kurang dari dua kullah, apabila kejatuhan najis, langsung dihukumi najis (mutanajjis) meskipun tidak berubah warna, bau, maupun rasanya. Ini berbeda dengan air yang jumlahnya lebih dari dua kullah, yang baru dihukumi najis jika salah satu sifatnya berubah.</p>
+      </div>
+    </details>
   </div>
 
   <div class="soal">
     <p><strong>12.</strong> Air suci yang bercampur dengan benda suci lain sehingga merubah nama air tersebut seperti teh dinamakan….</p>
     <p class="opsi">a. air mutaghoyyir &nbsp;&nbsp; b. air najis &nbsp;&nbsp; c. air musta'mal &nbsp;&nbsp; d. air musyammas</p>
+    <details class="kunci">
+      <summary>Kunci Jawaban & Pembahasan</summary>
+      <div class="kunci-isi">
+        <p class="jawaban">Jawaban: a. air mutaghoyyir</p>
+        <p><strong>Pembahasan:</strong> Air mutaghoyyir adalah air suci yang bercampur dengan benda suci lain sehingga berubah salah satu sifatnya (warna, bau, atau rasa) dan berubah namanya, misalnya air teh atau air kopi. Air ini suci namun tidak sah digunakan untuk bersuci.</p>
+      </div>
+    </details>
   </div>
 
   <div class="soal">
     <p><strong>13.</strong> Di bawah ini yang termasuk air yang suci tetapi tidak mensucikan adalah ...</p>
     <p class="opsi">a. air sumur, air kopi, air laut &nbsp;&nbsp; b. air laut, air sungai, air hujan &nbsp;&nbsp; c. air kelapa, air teh, air coca cola &nbsp;&nbsp; d. air es, air embun, mata air</p>
+    <details class="kunci">
+      <summary>Kunci Jawaban & Pembahasan</summary>
+      <div class="kunci-isi">
+        <p class="jawaban">Jawaban: c. air kelapa, air teh, air coca cola</p>
+        <p><strong>Pembahasan:</strong> Air kelapa, air teh, dan air coca cola adalah air yang sudah bercampur/berubah sifat aslinya, sehingga tetap suci namun tidak dapat digunakan untuk bersuci (mutaghoyyir).</p>
+      </div>
+    </details>
   </div>
 
   <div class="soal">
@@ -120,36 +246,85 @@
     b. tidak sah, karena airnya bersih dan manis<br>
     c. tidak sah, karena termasuk air suci tapi tidak mensucikan<br>
     d. sah, karena airnya suci mensucikan tapi makruh digunakan</p>
+    <details class="kunci">
+      <summary>Kunci Jawaban & Pembahasan</summary>
+      <div class="kunci-isi">
+        <p class="jawaban">Jawaban: c. tidak sah, karena termasuk air suci tapi tidak mensucikan</p>
+        <p><strong>Pembahasan:</strong> Air kelapa sudah tercampur dan berubah dari sifat air mutlak, sehingga tergolong air mutaghoyyir (suci tapi tidak mensucikan). Bersuci dengan air ini tidak sah walaupun airnya bersih dan layak minum.</p>
+      </div>
+    </details>
   </div>
 
   <div class="soal">
     <p><strong>15.</strong> Ketika sebuah ember berisi air sumur kejatuhan bangkai binatang yang darahnya tidak mengalir seperti cicak, maka hukum air tersebut adalah ….</p>
     <p class="opsi">a. suci dan mensucikan &nbsp;&nbsp; b. suci namun tidak mensucikan &nbsp;&nbsp; c. air musta'mal &nbsp;&nbsp; d. air mutanajjis</p>
+    <details class="kunci">
+      <summary>Kunci Jawaban & Pembahasan</summary>
+      <div class="kunci-isi">
+        <p class="jawaban">Jawaban: a. suci dan mensucikan</p>
+        <p><strong>Pembahasan:</strong> Bangkai binatang yang darahnya tidak mengalir (seperti cicak, lalat, semut) tidak menajiskan air atau benda cair lain yang dijatuhinya. Oleh karena itu, air tersebut tetap suci dan mensucikan.</p>
+      </div>
+    </details>
   </div>
 
   <div class="soal">
     <p><strong>16.</strong> Ukuran dua kullah adalah 81 kati syam, itu sama dengan ….</p>
     <p class="opsi">a. 90 liter &nbsp;&nbsp; b. 280 liter &nbsp;&nbsp; c. 275 liter &nbsp;&nbsp; d. 270 liter</p>
+    <details class="kunci">
+      <summary>Kunci Jawaban & Pembahasan</summary>
+      <div class="kunci-isi">
+        <p class="jawaban">Jawaban: d. 270 liter</p>
+        <p><strong>Pembahasan:</strong> Menurut ukuran yang umum dipakai dalam fiqih, dua kullah setara dengan 81 kati Baghdad/Syam, yang jika dikonversi kurang lebih sama dengan 270 liter.</p>
+      </div>
+    </details>
   </div>
 
   <div class="soal">
     <p><strong>17.</strong> Ukuran dua kullah adalah 10 sampai dengan 15 tin, yang disetarakan dengan...</p>
     <p class="opsi">a. 80 kati syam &nbsp;&nbsp; b. 81 kati syam &nbsp;&nbsp; c. 82 kati syam &nbsp;&nbsp; d. 83 kati syam</p>
+    <details class="kunci">
+      <summary>Kunci Jawaban & Pembahasan</summary>
+      <div class="kunci-isi">
+        <p class="jawaban">Jawaban: b. 81 kati syam</p>
+        <p><strong>Pembahasan:</strong> Ukuran dua kullah yang disebutkan sekitar 10-15 tin (guci) oleh para ulama disetarakan dengan 81 kati Syam, yang kemudian dikonversi menjadi kurang lebih 270 liter.</p>
+      </div>
+    </details>
   </div>
 
   <div class="soal">
     <p><strong>18.</strong> Air dalam jumlah lebih dari dua kullah terkena najis, sehingga berubah salah satu dari sifat air (warna, bau, rasa), maka dihukumi ….</p>
     <p class="opsi">a. air yang suci dan mensucikan &nbsp;&nbsp; b. air yang suci namun tidak mensucikan &nbsp;&nbsp; c. air mutanajjis &nbsp;&nbsp; d. air musta'mal</p>
+    <details class="kunci">
+      <summary>Kunci Jawaban & Pembahasan</summary>
+      <div class="kunci-isi">
+        <p class="jawaban">Jawaban: c. air mutanajjis</p>
+        <p><strong>Pembahasan:</strong> Air lebih dari dua kullah yang terkena najis baru dihukumi najis (mutanajjis) apabila salah satu sifatnya (warna, bau, atau rasa) berubah akibat najis tersebut. Jika tidak berubah, air tersebut tetap suci mensucikan.</p>
+      </div>
+    </details>
   </div>
 
   <div class="soal">
     <p><strong>19.</strong> Air yang terkena sinar panas matahari dan berada di bejana yang bisa berkarat, makruh digunakan untuk bersuci dengan alasan dapat menyebabkan penyakit ….</p>
     <p class="opsi">a. barash &nbsp;&nbsp; b. panu &nbsp;&nbsp; c. malaria &nbsp;&nbsp; d. deman</p>
+    <details class="kunci">
+      <summary>Kunci Jawaban & Pembahasan</summary>
+      <div class="kunci-isi">
+        <p class="jawaban">Jawaban: a. barash</p>
+        <p><strong>Pembahasan:</strong> Air musyammas (dipanaskan di bawah terik matahari dalam bejana logam yang mudah berkarat) dimakruhkan untuk bersuci karena dikhawatirkan dapat menyebabkan penyakit kulit yang disebut barash (semacam kusta/vitiligo).</p>
+      </div>
+    </details>
   </div>
 
   <div class="soal">
     <p><strong>20.</strong> Di bawah ini terdapat beberapa alat bersuci yang bisa digunakan sebagai ganti air, kecuali ….</p>
     <p class="opsi">a. kayu &nbsp;&nbsp; b. tisu &nbsp;&nbsp; c. atom &nbsp;&nbsp; d. batu bata</p>
+    <details class="kunci">
+      <summary>Kunci Jawaban & Pembahasan</summary>
+      <div class="kunci-isi">
+        <p class="jawaban">Jawaban: c. atom</p>
+        <p><strong>Pembahasan:</strong> Alat bersuci pengganti air harus berupa benda padat yang suci dan dapat mengangkat najis, seperti batu, kayu, tisu, atau batu bata. "Atom" bukan termasuk benda padat yang dapat digunakan untuk bersuci.</p>
+      </div>
+    </details>
   </div>
 
   <h3>2. Menjodohkan</h3>
@@ -172,22 +347,92 @@
     </tbody>
   </table>
 
+  <details class="kunci jodoh-kunci">
+    <summary>Kunci Jawaban & Pembahasan (No. 21–30)</summary>
+    <div class="kunci-isi">
+      <table>
+        <thead><tr><th>No</th><th>Jawaban</th><th>Pembahasan singkat</th></tr></thead>
+        <tbody>
+          <tr><td>21</td><td>C. iman</td><td>Sesuai hadits: kebersihan adalah sebagian dari iman.</td></tr>
+          <tr><td>22</td><td>I. 270</td><td>Dua kullah (81 kati Syam) setara ± 270 liter.</td></tr>
+          <tr><td>23</td><td>B. suci mensucikan</td><td>Air yang sah dipakai wudhu adalah air mutlak (suci mensucikan).</td></tr>
+          <tr><td>24</td><td>E. musta'mal</td><td>Air sedikit yang sudah dipakai bersuci disebut air musta'mal.</td></tr>
+          <tr><td>25</td><td>A. 7</td><td>Air mutlak ada 7 macam: hujan, sumur, laut, sungai, mata air, embun, dan salju.</td></tr>
+          <tr><td>26</td><td>J. Air teh</td><td>Air yang berubah sifatnya (mis. akibat panas/campuran) menjadi air mutaghoyyir, dicontohkan seperti air teh.</td></tr>
+          <tr><td>27</td><td>G. mutanajjis</td><td>Air kurang dari dua kullah yang kejatuhan najis langsung dihukumi mutanajjis (najis).</td></tr>
+          <tr><td>28</td><td>F. thaharah</td><td>Bersuci dalam bahasa Arab disebut thaharah.</td></tr>
+          <tr><td>29</td><td>D. tisu</td><td>Selain air dan batu, tisu juga dapat digunakan sebagai alat bersuci.</td></tr>
+          <tr><td>30</td><td>H. berwudlu</td><td>تَوَضَّأَ artinya "ia telah berwudhu".</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </details>
+
   <h3>3. Esai Singkat</h3>
   <p>Jawablah pertanyaan-pertanyaan di bawah ini dengan singkat dan jelas!</p>
   <div class="soal">
     <p><strong>31.</strong> Air merupakan salah satu alat bersuci yang digunakan untuk menghilangkan hadats dan najis seperti wudlu, mandi, dan lainnya. Sebutkan macam–macam air dilihat dari hukum penggunaannya!</p>
+    <details class="kunci">
+      <summary>Kunci Jawaban & Pembahasan</summary>
+      <div class="kunci-isi">
+        <p><strong>Kunci Jawaban:</strong> Dilihat dari hukum penggunaannya, air dibagi menjadi 4 macam:</p>
+        <p>1) <strong>Air suci dan mensucikan</strong> (air mutlak) — sah digunakan untuk bersuci, contoh: air hujan, air sumur, air laut.<br>
+        2) <strong>Air suci tapi tidak mensucikan</strong> — contoh: air musta'mal dan air mutaghoyyir (air teh, air kelapa).<br>
+        3) <strong>Air suci mensucikan tapi makruh digunakan</strong> — yaitu air musyammas.<br>
+        4) <strong>Air mutanajjis (najis)</strong> — air yang kejatuhan najis dan berubah sifatnya, atau air sedikit yang kejatuhan najis.</p>
+        <p><strong>Pembahasan:</strong> Pembagian ini penting agar seseorang mengetahui air mana yang sah dipakai untuk wudhu/mandi wajib dan mana yang tidak, sehingga ibadahnya sah menurut syariat.</p>
+      </div>
+    </details>
   </div>
   <div class="soal">
     <p><strong>32.</strong> Sebutkan persamaan dan perbedaan antara bersuci dan membersihkan diri!</p>
+    <details class="kunci">
+      <summary>Kunci Jawaban & Pembahasan</summary>
+      <div class="kunci-isi">
+        <p><strong>Kunci Jawaban:</strong></p>
+        <p><em>Persamaan:</em> keduanya sama-sama bertujuan menghilangkan kotoran/sesuatu yang tidak diinginkan dari badan, dan biasanya menggunakan air.</p>
+        <p><em>Perbedaan:</em> Bersuci (thaharah) bertujuan menghilangkan hadats dan/atau najis, harus disertai niat, memiliki tata cara dan syarat tertentu sesuai syariat, serta menjadi syarat sahnya ibadah seperti shalat. Sedangkan membersihkan diri bertujuan menghilangkan kotoran fisik atau bau (misalnya mandi biasa, cuci tangan), tidak memerlukan niat khusus, dan tidak terikat pada sah tidaknya ibadah.</p>
+        <p><strong>Pembahasan:</strong> Perbedaan mendasarnya terletak pada niat dan tujuan syar'i; bersuci berkaitan langsung dengan keabsahan ibadah, sedangkan membersihkan diri lebih bersifat kebutuhan kebersihan fisik semata.</p>
+      </div>
+    </details>
   </div>
   <div class="soal">
     <p><strong>33.</strong> Apakah yang disebut air musta'mal itu?</p>
+    <details class="kunci">
+      <summary>Kunci Jawaban & Pembahasan</summary>
+      <div class="kunci-isi">
+        <p><strong>Kunci Jawaban:</strong> Air musta'mal adalah air sedikit (kurang dari dua kullah) yang telah digunakan untuk bersuci, yaitu untuk menghilangkan hadats kecil (wudhu) maupun hadats besar (mandi wajib).</p>
+        <p><strong>Pembahasan:</strong> Air musta'mal hukumnya tetap suci, tetapi tidak dapat digunakan lagi untuk bersuci karena sudah terpakai (kehilangan fungsi mensucikan), sehingga digolongkan sebagai air suci tapi tidak mensucikan.</p>
+      </div>
+    </details>
   </div>
   <div class="soal">
     <p><strong>34.</strong> Batu adalah salah satu alat yang bisa digunakan untuk bersuci. Sebutkan syarat-syarat batu yang bisa digunakan untuk bersuci!</p>
+    <details class="kunci">
+      <summary>Kunci Jawaban & Pembahasan</summary>
+      <div class="kunci-isi">
+        <p><strong>Kunci Jawaban:</strong> Syarat-syarat batu (atau benda padat lain) yang boleh digunakan untuk bersuci (istinja'/istijmar):</p>
+        <p>1) Batunya suci (bukan benda najis).<br>
+        2) Dapat mengangkat/menghilangkan 'ain (zat) najis.<br>
+        3) Digunakan minimal 3 buah batu atau 3 kali usapan.<br>
+        4) Najis belum kering saat diistinjakan.<br>
+        5) Najis belum berpindah tempat.<br>
+        6) Najis belum terkena benda/cairan lain sebelum diistinjakan.</p>
+        <p><strong>Pembahasan:</strong> Syarat-syarat ini memastikan proses istinja' dengan batu benar-benar efektif membersihkan najis, sehingga bersuci dengan benda padat ini tetap sah sebagai pengganti air.</p>
+      </div>
+    </details>
   </div>
   <div class="soal">
     <p><strong>35.</strong> Tulislah dasar hukum Al-Qur'an surat Al-Baqarah ayat 222 yang memerintahkan bersuci beserta artinya!</p>
+    <details class="kunci">
+      <summary>Kunci Jawaban & Pembahasan</summary>
+      <div class="kunci-isi">
+        <p><strong>Kunci Jawaban:</strong></p>
+        <p class="ar" style="font-size:1.2rem;">إِنَّ اللَّهَ يُحِبُّ التَّوَّابِينَ وَيُحِبُّ الْمُتَطَهِّرِينَ (البقرة: ٢٢٢)</p>
+        <p><em>Artinya:</em> "Sesungguhnya Allah menyukai orang-orang yang bertaubat dan menyukai orang-orang yang menyucikan diri." (QS. Al-Baqarah: 222)</p>
+        <p><strong>Pembahasan:</strong> Ayat ini menjadi salah satu dasar utama perintah dan anjuran bersuci dalam Islam, menunjukkan bahwa Allah mencintai hamba-Nya yang senantiasa menjaga kesucian dan kebersihan diri baik lahir maupun batin.</p>
+      </div>
+    </details>
   </div>
 
   <div class="pager">
