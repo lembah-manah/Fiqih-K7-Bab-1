@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fiqih Kelas 7 — MTs Lembah Manah</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --hijau-tua: #123524;
+    --hijau: #1c5138;
+    --hijau-terang: #2e7350;
+    --emas: #bd9650;
+    --emas-terang: #e2c583;
+    --krem: #f7f2e6;
+    --krem-kartu: #fffdf8;
+    --tinta: #26241d;
+    --tinta-lembut: #55503f;
+    --garis: rgba(18,53,36,0.14);
+  }
+
+  *{box-sizing:border-box;}
+
+  html{scroll-behavior:smooth;}
+
+  body{
+    margin:0;
+    background:var(--krem);
+    color:var(--tinta);
+    font-family:'Work Sans', sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  /* decorative geometric border strip, drawn as an inline SVG pattern */
+  .motif{
+    height:14px;
+    width:100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='14' viewBox='0 0 28 14'%3E%3Cpath d='M14 0 L18 4 L14 8 L10 4 Z M0 4 L4 0 L8 4 L4 8 Z M20 4 L24 0 L28 4 L24 8 Z' fill='%23bd9650' opacity='0.55'/%3E%3C/svg%3E");
+    background-repeat:repeat-x;
+    background-position:center;
+  }
+  .motif.bawah{transform:scaleY(-1);}
+
+  header{
+    background: linear-gradient(180deg, var(--hijau-tua) 0%, var(--hijau) 100%);
+    color: var(--krem);
+    text-align:center;
+    padding: 3.2rem 1.5rem 3rem;
+    position:relative;
+  }
+
+  .eyebrow{
+    font-size:0.78rem;
+    letter-spacing:0.22em;
+    text-transform:uppercase;
+    color: var(--emas-terang);
+    margin:0 0 0.6rem;
+    font-weight:500;
+  }
+
+  header h2{
+    font-family:'Amiri', serif;
+    font-weight:400;
+    font-style:italic;
+    font-size:1.15rem;
+    margin:0 0 1.1rem;
+    color: rgba(247,242,230,0.85);
+    letter-spacing:0.01em;
+  }
+
+  header h1{
+    font-family:'Amiri', serif;
+    font-weight:700;
+    font-size:clamp(2.1rem, 5vw, 3.1rem);
+    margin:0;
+    line-height:1.25;
+  }
+
+  .medali{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:1.1rem;
+  }
+  .medali svg{width:46px;height:46px;}
+
+  main{
+    max-width:840px;
+    margin:0 auto;
+    padding: 2.8rem 1.5rem 4rem;
+  }
+
+  .intro{
+    text-align:center;
+    color: var(--tinta-lembut);
+    font-size:0.98rem;
+    margin: 0 auto 2.6rem;
+    max-width:560px;
+    line-height:1.65;
+  }
+  .intro .semester{
+    display:inline-block;
+    margin-top:0.7rem;
+    font-size:0.78rem;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color: var(--emas);
+    font-weight:600;
+  }
+
+  .daftar-eyebrow{
+    text-align:center;
+    font-size:0.78rem;
+    letter-spacing:0.2em;
+    text-transform:uppercase;
+    color:var(--hijau);
+    font-weight:600;
+    margin-bottom:1.6rem;
+  }
+
+  .bab-list{
+    display:flex;
+    flex-direction:column;
+    gap:1.1rem;
+  }
+
+  .bab-card{
+    display:block;
+    text-decoration:none;
+    color:inherit;
+    background: var(--krem-kartu);
+    border:1px solid var(--garis);
+    border-radius:10px;
+    padding: 1.5rem 1.7rem;
+    position:relative;
+    overflow:hidden;
+    transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+  }
+  .bab-card::before{
+    content:"";
+    position:absolute;
+    left:0; top:0; bottom:0;
+    width:4px;
+    background: linear-gradient(180deg, var(--emas), var(--hijau));
+    opacity:0.85;
+  }
+  .bab-card:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 14px 30px -18px rgba(18,53,36,0.45);
+    border-color: var(--emas-terang);
+  }
+  .bab-card:focus-visible{
+    outline: 3px solid var(--hijau-terang);
+    outline-offset: 2px;
+  }
+
+  .bab-head{
+    display:flex;
+    align-items:baseline;
+    gap:0.9rem;
+    margin-bottom:0.55rem;
+  }
+
+  .bab-nomor{
+    font-family:'Amiri', serif;
+    font-weight:700;
+    font-size:1.6rem;
+    color: var(--emas);
+    flex-shrink:0;
+    min-width:2ch;
+  }
+
+  .bab-judul{
+    font-family:'Amiri', serif;
+    font-weight:700;
+    font-size:1.32rem;
+    color: var(--hijau-tua);
+    letter-spacing:0.01em;
+  }
+
+  .bab-topik{
+    margin: 0 0 0.9rem;
+    padding:0;
+    list-style:none;
+    display:flex;
+    flex-wrap:wrap;
+    gap:0.4rem 0.7rem;
+  }
+  .bab-topik li{
+    font-size:0.84rem;
+    color: var(--tinta-lembut);
+    position:relative;
+    padding-left:0.9rem;
+  }
+  .bab-topik li::before{
+    content:"·";
+    position:absolute;
+    left:0;
+    color: var(--emas);
+    font-weight:700;
+  }
+
+  .bab-cta{
+    font-size:0.82rem;
+    font-weight:600;
+    color: var(--hijau);
+    letter-spacing:0.02em;
+    display:inline-flex;
+    align-items:center;
+    gap:0.35rem;
+  }
+  .bab-cta svg{
+    width:13px; height:13px;
+    transition: transform 0.2s ease;
+  }
+  .bab-card:hover .bab-cta svg{ transform: translateX(4px); }
+
+  .tautan-lain{
+    margin-top:2.6rem;
+    padding-top:2rem;
+    border-top:1px dashed var(--garis);
+    text-align:center;
+  }
+  .tautan-lain p{
+    font-size:0.86rem;
+    color: var(--tinta-lembut);
+    margin:0 0 0.9rem;
+  }
+  .chip-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:0.6rem;
+    justify-content:center;
+  }
+  .chip{
+    font-size:0.78rem;
+    padding:0.45rem 0.95rem;
+    border:1px solid var(--garis);
+    border-radius:999px;
+    color: var(--tinta-lembut);
+    background: var(--krem-kartu);
+  }
+
+  footer{
+    text-align:center;
+    padding: 2.2rem 1.5rem 2.6rem;
+    color: rgba(247,242,230,0.7);
+    background: var(--hijau-tua);
+    font-size:0.8rem;
+    line-height:1.7;
+  }
+  footer strong{ color: var(--emas-terang); font-weight:600; }
+
+  @media (max-width: 520px){
+    header{padding: 2.4rem 1.2rem 2.2rem;}
+    main{padding: 2.2rem 1rem 3rem;}
+    .bab-card{padding: 1.2rem 1.2rem;}
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    .bab-card, .bab-cta svg{ transition:none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="motif" aria-hidden="true"></div>
+<header>
+  <div class="medali" aria-hidden="true">
+    <svg viewBox="0 0 100 100" fill="none">
+      <polygon points="50,4 62,25 85,15 75,38 96,50 75,62 85,85 62,75 50,96 38,75 15,85 25,62 4,50 25,38 15,15 38,25"
+        fill="none" stroke="#e2c583" stroke-width="2.5" stroke-linejoin="round"/>
+      <circle cx="50" cy="50" r="14" fill="none" stroke="#e2c583" stroke-width="2"/>
+    </svg>
+  </div>
+  <p class="eyebrow">Yayasan Lembah Manah Langon Jepara</p>
+  <h2>Rintisan MTs Lembah Manah</h2>
+  <h1>Mata Pelajaran Fiqih Kelas 7</h1>
+</header>
+<div class="motif bawah" aria-hidden="true"></div>
+
+<main>
+  <p class="intro">
+    Modul pembelajaran Fiqih Kelas 7 disusun mengikuti Kurikulum Merdeka, memuat lima bab pokok
+    seputar thaharah, ibadah shalat, dan dzikir. Pilih salah satu bab di bawah untuk membuka materi.
+    <br><span class="semester">Semester Ganjil TP. 2026 / 2027</span>
+  </p>
+
+  <p class="daftar-eyebrow">Daftar Bab</p>
+
+  <div class="bab-list">
+
+    <a class="bab-card" href="Bab-1/index.html">
+      <div class="bab-head">
+        <span class="bab-nomor">I</span>
+        <span class="bab-judul">Thaharah</span>
+      </div>
+      <ul class="bab-topik">
+        <li>Ketentuan Thaharah</li>
+        <li>Kedudukan Air dalam Bersuci</li>
+        <li>Alat Bersuci Selain Air</li>
+        <li>Hikmah Penggunaan Alat Bersuci</li>
+      </ul>
+      <span class="bab-cta">Buka Bab I
+        <svg viewBox="0 0 16 16" fill="none"><path d="M2 8h11M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+    </a>
+
+    <a class="bab-card" href="Bab-2/index.html">
+      <div class="bab-head">
+        <span class="bab-nomor">II</span>
+        <span class="bab-judul">Hadats dan Najis</span>
+      </div>
+      <ul class="bab-topik">
+        <li>Najis dan Tata Cara Mensucikannya</li>
+        <li>Hadats, Pembagian, dan Tata Cara Mensucikannya</li>
+        <li>Istinja'</li>
+        <li>Tayamum</li>
+        <li>Hikmah Pelaksanaan Bersuci</li>
+      </ul>
+      <span class="bab-cta">Buka Bab II
+        <svg viewBox="0 0 16 16" fill="none"><path d="M2 8h11M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+    </a>
+
+    <a class="bab-card" href="Bab-3/index.html">
+      <div class="bab-head">
+        <span class="bab-nomor">III</span>
+        <span class="bab-judul">Shalat Fardlu Lima Waktu</span>
+      </div>
+      <ul class="bab-topik">
+        <li>Ketentuan Shalat Fardlu Lima Waktu</li>
+        <li>Tata Cara Pelaksanaan Shalat Fardlu</li>
+        <li>Ketentuan Waktu Shalat Lima Waktu</li>
+        <li>Hikmah Pelaksanaan Shalat Fardlu</li>
+      </ul>
+      <span class="bab-cta">Buka Bab III
+        <svg viewBox="0 0 16 16" fill="none"><path d="M2 8h11M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+    </a>
+
+    <a class="bab-card" href="Bab-4/index.html">
+      <div class="bab-head">
+        <span class="bab-nomor">IV</span>
+        <span class="bab-judul">Shalat Berjamaah</span>
+      </div>
+      <ul class="bab-topik">
+        <li>Ketentuan Shalat Berjamaah</li>
+        <li>Makmum Muwafiq dan Makmum Masbuq</li>
+        <li>Cara Mengingatkan Imam yang Lupa</li>
+        <li>Hikmah Pelaksanaan Shalat Berjamaah</li>
+      </ul>
+      <span class="bab-cta">Buka Bab IV
+        <svg viewBox="0 0 16 16" fill="none"><path d="M2 8h11M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+    </a>
+
+    <a class="bab-card" href="Bab-5/index.html">
+      <div class="bab-head">
+        <span class="bab-nomor">V</span>
+        <span class="bab-judul">Dzikir dan Do'a Setelah Shalat</span>
+      </div>
+      <ul class="bab-topik">
+        <li>Ketentuan Dzikir dan Do'a</li>
+        <li>Tata Cara Dzikir dan Do'a</li>
+        <li>Waktu-waktu untuk Berdo'a</li>
+        <li>Hikmah Dzikir dan Do'a</li>
+      </ul>
+      <span class="bab-cta">Buka Bab V
+        <svg viewBox="0 0 16 16" fill="none"><path d="M2 8h11M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+    </a>
+
+  </div>
+
+  <div class="tautan-lain">
+    <p>Isi tambahan pada modul cetak</p>
+    <div class="chip-row">
+      <span class="chip">Latihan Soal Asesmen Tengah Semester</span>
+      <span class="chip">Latihan Soal Asesmen Akhir Semester</span>
+      <span class="chip">Daftar Pustaka</span>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <strong>Yayasan Lembah Manah Langon Jepara</strong><br>
+  Rintisan MTs Lembah Manah · Mata Pelajaran Fiqih Kelas 7
+</footer>
+
+</body>
+</html>
